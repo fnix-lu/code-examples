@@ -14,7 +14,7 @@
         <div class="img-box" v-for="(file, i) in fileList" :key="i">
           <img class="img-item" :src="file.url">
           <div class="img-box-cover">
-            <i class="img-del el-icon-close"></i>
+            <i class="img-del el-icon-close" @click="remove(i)"></i>
           </div>
           <el-progress v-if="file.status === 'uploading'" class="img-progress" :percentage="Math.floor(file.percentage)" :show-text="false"/>
         </div>
@@ -25,7 +25,7 @@
           :on-progress="onProgress"
           :on-success="onSuccess"
           ref="upload"
-          v-if="fileList.length < limit">
+          v-show="fileList.length < limit">
           <div class="img-upload" ref="imgUpload">
             <i class="el-icon-plus"></i>
           </div>
