@@ -1,0 +1,22 @@
+/* pages/order/components/NavBar/NavBar.wxss */
+.nav-bar {
+  display: flex;
+  align-items: center;
+  padding-left: 32rpx;
+  padding-right: 32rpx;
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  z-index: 1000;
+}
+.i-back {
+  width: 48rpx;
+  height: 48rpx;
+  display: block;
+}
+
+.nav-bar-title {
+  font-size: 36rpx;
+  font-weight: 600;
+}

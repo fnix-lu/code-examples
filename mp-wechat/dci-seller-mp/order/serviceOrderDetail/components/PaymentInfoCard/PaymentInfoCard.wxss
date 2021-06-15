@@ -1,0 +1,108 @@
+/* pages/order/serviceOrderDetail/components/PaymentInfoCard/PaymentInfoCard.wxss */
+.payment-info-card {
+  background: #F7F8FA;
+  border-radius: 8rpx;
+  padding: 0 32rpx;
+  margin: 0 32rpx;
+}
+
+.card-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 100rpx;
+  position: relative;
+}
+.card-header::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  border-bottom: 2rpx solid #fff;
+}
+
+.card-body {
+  padding: 32rpx 0;
+}
+
+.card-footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 16rpx;
+  padding-bottom: 32rpx;
+  position: relative;
+}
+.card-footer::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  border-top: 2rpx solid #fff;
+}
+
+/* 支付时间 */
+.payment-time {
+  font-size: 28rpx;
+  color: #333333;
+  font-weight: 500;
+}
+
+.info-row {
+  font-size: 28rpx;
+  color: #666666;
+  line-height: 40rpx;
+}
+.info-row + .info-row {
+  margin-top: 16rpx;
+}
+
+/* 图片 */
+.img-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-top: 32rpx;
+}
+.img-list::after {
+  content: '';
+  width: 196rpx;
+}
+.img-list .img {
+  width: 196rpx;
+  height: 196rpx;
+  border: 1rpx solid #CCCCCC;
+  border-radius: 8rpx;
+  box-sizing: border-box;
+}
+
+/* 支付金额 */
+.payment-price {
+  font-size: 28rpx;
+  font-weight: 600;
+  color: #333333;
+}
+.payment-price .price {
+  color: #E73626;
+}
+
+/* 按钮 */
+.card-btn {
+  height: 64rpx;
+  min-width: 160rpx;
+  padding: 0 16rpx;
+  font-size: 24rpx;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-color: #222222 !important;
+  background: #222222;
+  color: #ffffff;
+  border-radius: 8rpx;
+  margin: 0;
+}
+.card-btn[plain] {
+  color: #333333;
+}

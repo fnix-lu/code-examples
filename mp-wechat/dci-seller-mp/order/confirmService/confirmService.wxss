@@ -1,0 +1,75 @@
+/* pages/order/confirmService/confirmService.wxss */
+page {
+  background: #F7F8FA;
+}
+
+.tip {
+  height: 80rpx;
+  display: flex;
+  align-items: center;
+  padding: 0 32rpx;
+  font-size: 24rpx;
+  color: #333333;
+}
+.tip .i-tip {
+  width: 48rpx;
+  height: 48rpx;
+  margin-right: 16rpx;
+}
+
+.service-sub-item {
+  padding: 32rpx 0;
+  position: relative;
+}
+.service-sub-item::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  border-top: 2rpx solid #F7F8FA;
+}
+.service-base-title {
+  font-size: 28rpx;
+  color: #333333;
+  font-weight: 600;
+  line-height: 36rpx;
+}
+.service-base-desc {
+  margin-top: 8rpx;
+  font-size: 24rpx;
+  color: #999999;
+  line-height: 36rpx;
+}
+
+.upload-tip {
+  font-size: 24rpx;
+  color: #E73626;
+  margin-top: 48rpx;
+  margin-bottom: 16rpx;
+}
+
+.confirm-card {
+  padding: 32rpx;
+  background: #fff;
+  border-radius: 8rpx;
+  width: 686rpx;
+  margin: 32rpx auto;
+  box-sizing: border-box;
+}
+.confirm-card-btn-row {
+  text-align: right;
+  margin-top: 32rpx;
+}
+.confirm-card-btn {
+  width: 160rpx;
+  height: 64rpx;
+  color: #fff;
+  background: #222222;
+  border-radius: 8rpx;
+  font-size: 28rpx;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+}

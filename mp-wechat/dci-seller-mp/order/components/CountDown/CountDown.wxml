@@ -1,0 +1,8 @@
+<!--pages/order/components/CountDown/CountDown.wxml-->
+<view class="count-down {{ background ? 'background' : '' }} ext-class">
+  <text class="count-down-time">{{ time.hh }}</text>
+  <text class="count-down-mark">:</text>
+  <text class="count-down-time">{{ time.mm }}</text>
+  <text class="count-down-mark">:</text>
+  <text class="count-down-time">{{ time.ss }}</text>
+</view>

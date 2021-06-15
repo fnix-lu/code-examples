@@ -1,0 +1,17 @@
+<!--pages/order/paymentFeedback/components/UploadFile/UploadFile.wxml-->
+<view class="file-list" style="margin-top: -{{ boxSpan }}rpx">
+  <view
+    class="file-box"
+    style="{{ fileBoxStyle }}">
+    <image class="file-item"></image>
+    <image class="i-del" src="https://static.zc0901.com/dci-seller-mp/close-fill.png"></image>
+  </view>
+
+  <view
+    class="file-box file-upload"
+    style="{{ fileBoxStyle }}">
+    <image class="i-upload" src="https://static.zc0901.com/dci-seller-mp/upload-icon.png"></image>
+  </view>
+
+  <view style="width: {{ boxSize }}rpx"></view>
+</view>

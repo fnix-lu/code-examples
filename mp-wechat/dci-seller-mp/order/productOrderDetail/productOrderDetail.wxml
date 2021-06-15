@@ -1,0 +1,94 @@
+<!--pages/order/productOrderDetail/productOrderDetail.wxml-->
+<view class="page-wrap">
+  <!-- 订单状态 -->
+  <view class="order-status">
+    <view class="status-row">
+      <!-- <image class="i-status" src="https://static.zc0901.com/dci-seller-mp/status-clock.png"></image> -->
+      <!-- <image class="i-status" src="https://static.zc0901.com/dci-seller-mp/status-truck.png"></image> -->
+      <image class="i-status" src="https://static.zc0901.com/dci-seller-mp/status-check.png"></image>
+      <text class="status-text">待付款</text>
+    </view>
+    <view class="status-desc">订单将在<count-down seconds="{{ 3600 }}" ext-class="order-count-down"></count-down>后失效</view>
+  </view>
+
+  <!-- 收货地址 -->
+  <view class="order-address">
+    <view class="title">地方仓收货地址</view>
+    <view class="info-row">
+      <text class="info-label">收货人</text>
+      <text class="info-text">乔万尼·薄伽丘</text>
+    </view>
+    <view class="info-row">
+      <text class="info-label">手机号码</text>
+      <text class="info-text">13776114094</text>
+    </view>
+    <view class="info-row">
+      <text class="info-label">收货地址</text>
+      <text class="info-text">江苏省苏州市工业园区旺墩路290号圆融星座写字楼 2901室筑润建材</text>
+    </view>
+  </view>
+
+  <!-- 产品订单 -->
+  <view class="order-products">
+    <view class="title">产品订单</view>
+    <product-list></product-list>
+    <view class="order-info">
+      <view class="info-row">
+        <view class="info-label">订单编号</view>
+        <view class="info-value">20210526298470</view>
+      </view>
+      <view class="info-row">
+        <view class="info-label">订单时间</view>
+        <view class="info-value">2021-05-25 13:34:11</view>
+      </view>
+      <view class="info-row">
+        <view class="info-label">数量/平米</view>
+        <view class="info-value">合计36片/约100.80m²</view>
+      </view>
+      <view class="info-row">
+        <view class="info-label">预计送达时间<text class="info-desc">（已实际反馈时间为准）</text></view>
+        <view class="info-value">2021-05-23 </view>
+      </view>
+      <view class="info-row">
+        <view class="info-label">商品总价</view>
+        <view class="info-value">¥20160</view>
+      </view>
+      <view class="info-row">
+        <view class="info-label">物流价格<text class="info-desc">（包邮减免，原配送费¥2000）</text></view>
+        <view class="info-value">¥0</view>
+      </view>
+      <view class="info-row">
+        <view class="info-label">应收金额</view>
+        <view class="info-value">¥30000</view>
+      </view>
+      <view class="info-row">
+        <view class="info-label">扣除服务项收益金额</view>
+        <view class="info-value">¥9840</view>
+      </view>
+    </view>
+    <view class="order-settle">实付金额：<text class="price">¥20160</text></view>
+  </view>
+
+  <view class="footer">
+    <view class="footer-inner">
+      <mp-popover>
+        <view slot="trigger" class="more-menu-trigger">更多</view>
+        <view class="more-menu-list">
+          <view class="more-menu-item">修改订单</view>
+          <view class="more-menu-item">取消订单</view>
+        </view>
+      </mp-popover>
+      <view class="footer-btns">
+        <button class="order-btn" plain>分享订单</button>
+        <!-- <button class="order-btn">支付凭证</button> -->
+        <button class="order-btn" bindtap="showLogistics">查看物流</button>
+      </view>
+    </view>
+  </view>
+
+  <mp-drawer title="物流详情" model:visible="{{ visibleLogistics }}">
+    <view style="padding:32rpx">
+      <time-line></time-line>
+    </view>
+  </mp-drawer>
+</view>

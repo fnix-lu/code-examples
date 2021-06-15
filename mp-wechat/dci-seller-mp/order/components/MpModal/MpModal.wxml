@@ -1,0 +1,12 @@
+<!--pages/order/components/MpModal/MpModal.wxml-->
+<view class="mask" wx:if="{{ visible }}"></view>
+<view class="modal {{ visible ? 'visible' : '' }}">
+  <view class="modal-header" wx:if="{{ title }}">{{ title }}</view>
+  <view class="modal-body">{{ content }}</view>
+  <view class="modal-footer">
+    <button class="modal-btn" style="color: {{ cancelColor }}" bindtap="hide">取消</button>
+    <button class="modal-btn" style="color: {{ confirmColor }}">确认</button>
+  </view>
+
+  <image class="modal-close" src="https://static.zc0901.com/dci-seller-mp/modal-close.png"></image>
+</view>

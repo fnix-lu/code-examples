@@ -1,0 +1,9 @@
+<!--pages/order/components/MpDrawer/MpDrawer.wxml-->
+<view class="mask" bindtap="onHide" wx:if="{{ visible }}"></view>
+<view class="drawer {{ visible ? 'visible' : '' }}">
+  <view class="drawer-header">
+    <text>{{ title }}</text>
+    <image class="drawer-close" bindtap="onHide" src="https://static.zc0901.com/dci-seller-mp/close.png"></image>
+  </view>
+  <slot></slot>
+</view>

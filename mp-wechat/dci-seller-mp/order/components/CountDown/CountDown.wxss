@@ -1,0 +1,24 @@
+/* pages/order/components/CountDown/CountDown.wxss */
+.count-down {
+  display: flex;
+  align-items: center;
+  font-size: 24rpx;
+  color: #333333;
+}
+.count-down.background .count-down-time {
+  font-size: 24rpx;
+  color: #E73626;
+  font-weight: 600;
+  display: inline-flex;
+  width: 40rpx;
+  height: 40rpx;
+  background: #fff;
+  border-radius: 8rpx;
+  justify-content: center;
+  align-items: center;
+}
+.count-down.background .count-down-mark {
+  font-size: 28rpx;
+  margin: 0 4rpx;
+  font-weight: 600;
+}

@@ -1,0 +1,12 @@
+<!--pages/order/serviceOrderDetail/components/TabPaymentInfo/TabPaymentInfo.wxml-->
+<view class="tab-payment-info">
+  <view class="payment-info">
+    <payment-info-card></payment-info-card>
+  </view>
+  <view class="payment-info">
+    <payment-info-card></payment-info-card>
+  </view>
+  <view class="payment-info">
+    <payment-info-card></payment-info-card>
+  </view>
+</view>

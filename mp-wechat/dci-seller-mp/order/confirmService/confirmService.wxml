@@ -1,0 +1,102 @@
+<!--pages/order/confirmService/confirmService.wxml-->
+<view>
+  <view class="tip">
+    <image class="i-tip" src="https://static.zc0901.com/dci-seller-mp/msg-tip.png"></image>
+    <text>服务项真实完成需及时确认，以免影响完单结算</text>
+  </view>
+
+  <!-- 量房、铺贴方案 -->
+  <service-card title="量房、铺贴方案" show-desc>
+    <service-subitem title="量房" desc="现场工地实际量房"></service-subitem>
+    <service-subitem title="铺贴方案" desc="完成铺贴方案、报价单、施工图与客户确认无误并上传报价单和铺贴方案图片">
+      <view class="upload-tip">上传报价单和铺贴方案图片，最多上传9张</view>
+      <upload-file box-size="{{ 196 }}" box-span="{{ 16 }}"></upload-file>
+      <view class="service-base-title" style="margin-top:48rpx;margin-bottom:16rpx">报价单及铺贴方案图片</view>
+      <media-list></media-list>
+    </service-subitem>
+  </service-card>
+
+  <!-- 量房、铺贴方案进度 -->
+  <service-card title="量房、铺贴方案进度" show-desc>
+    <view class="service-sub-item">
+      <time-line-item
+        title="开始服务"
+        content="2021-05-11 9:34:45"
+        icon="https://static.zc0901.com/dci-seller-mp/step-love.png"
+        status="passed">
+      </time-line-item>
+      <time-line-item
+        title="确认量房"
+        content="2021-05-12 15:23:07"
+        status="passed">
+      </time-line-item>
+      <time-line-item
+        title="铺贴方案上传"
+        content="2021-05-12 15:23:07"
+        status="active">
+        <view style="margin-top:16rpx">
+          <media-list box-size="{{ 160 }}" box-span="{{ 16 }}"></media-list>
+        </view>
+      </time-line-item>
+      <time-line-item
+        title="方案已完成"
+        last>
+      </time-line-item>
+    </view>
+  </service-card>
+
+  <view class="confirm-card">
+    <view class="service-base-title">请确认</view>
+    <view class="service-base-desc">已和服务商确认铺贴方案</view>
+    <view class="confirm-card-btn-row">
+      <button class="confirm-card-btn">确认</button>
+    </view>
+  </view>
+
+  <!-- 效果图 -->
+  <service-card title="效果图" show-desc>
+    <service-subitem title="效果图" desc="制作铺贴效果图与客户确认产品、颜色、规格，请上传铺贴效果图图片">
+      <view class="upload-tip">上传铺贴效果图片，最多上传9张</view>
+      <upload-file box-size="{{ 196 }}" box-span="{{ 16 }}"></upload-file>
+    </service-subitem>
+  </service-card>
+
+  <view class="confirm-card">
+    <view class="service-base-title">请验收</view>
+    <view class="service-base-desc">已和服务商确认铺贴方案</view>
+    <view class="confirm-card-btn-row">
+      <button class="confirm-card-btn">确认</button>
+    </view>
+  </view>
+
+  <!-- 地方配送 -->
+  <service-card title="地方配送">
+    <service-subitem title="取货" desc="完成地方仓取货并验收货物外包装"></service-subitem>
+    <service-subitem title="配送" desc="与客户确认派送时间和车辆型号，安排送货"></service-subitem>
+    <service-subitem title="签收" desc="完成送达、搬运、参与拆包验收、客户签字确认签收"></service-subitem>
+  </service-card>
+
+  <!-- 补货配送 -->
+  <service-card title="补货配送" show-desc>
+    <service-subitem title="取货" desc="完成地方仓取货并验收货物外包装"></service-subitem>
+    <service-subitem title="配送" desc="与客户确认派送时间和车辆型号，安排送货"></service-subitem>
+    <service-subitem title="签收" desc="完成送达、搬运、参与拆包验收、客户签字确认签收"></service-subitem>
+  </service-card>
+
+  <!-- 退货配送 -->
+  <service-card title="退货配送">
+    <service-subitem title="取货" desc="参与验收产品是否满足退货条件、核对型号、数量、拍照"></service-subitem>
+    <service-subitem title="发货" desc="二次打包并拍照、联系物流公司退回仓库"></service-subitem>
+  </service-card>
+
+  <!-- 加工 -->
+  <service-card title="加工">
+    <service-subitem title="确认加工需求信息" desc="根据工地实际加工需求确认加工尺寸"></service-subitem>
+    <service-subitem title="加工" desc="完成工地加工或加工厂加工、取货、送货、搬运"></service-subitem>
+  </service-card>
+
+  <!-- 工地跟踪及售后 -->
+  <service-card title="工地跟踪及售后">
+    <service-subitem title="工地跟踪及售后" desc="确认完成全流程服务对接环节，关于售前、售中、售后所有对接环节已全部完成"></service-subitem>
+  </service-card>
+</view>

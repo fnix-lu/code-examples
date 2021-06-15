@@ -1,0 +1,11 @@
+<!--pages/order/components/MpPopover/MpPopover.wxml-->
+<view class="popover">
+  <slot name="trigger" bindtap="onTrigger"></slot>
+  <view class="popover-layer" hidden="{{ !visibleLayer }}">
+    <view class="popover-layer-inner">
+      <view class="popover-layer-content">
+        <slot></slot>
+      </view>
+    </view>
+  </view>
+</view>

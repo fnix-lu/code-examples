@@ -1,0 +1,10 @@
+{
+  "usingComponents": {
+    "upload-file": "../components/UploadFile/UploadFile",
+    "media-list": "../components/MediaList/MediaList",
+    "time-line-item": "../components/TimeLineItem/TimeLineItem",
+    "service-card": "./components/ServiceCard/ServiceCard",
+    "service-subitem": "./components/ServiceSubitem/ServiceSubitem"
+  },
+  "navigationBarTitleText": "服务项确认"
+}

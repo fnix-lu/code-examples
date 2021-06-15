@@ -1,0 +1,11 @@
+{
+  "usingComponents": {
+    "tab-service-items": "./components/TabServiceItems/TabServiceItems",
+    "tab-product-orders": "./components/TabProductOrders/TabProductOrders",
+    "tab-payment-info": "./components/TabPaymentInfo/TabPaymentInfo",
+    "nav-bar": "../components/NavBar/NavBar"
+  },
+  "navigationBarTitleText": "服务单详情",
+  "navigationStyle": "custom",
+  "navigationBarTextStyle": "white"
+}

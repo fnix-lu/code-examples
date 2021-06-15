@@ -1,0 +1,66 @@
+/* pages/order/paymentFeedback/paymentFeedback.wxss */
+page {
+  background: #F7F8FA;
+}
+
+.panel {
+  padding: 32rpx;
+  background: #fff;
+  margin: 16rpx 0;
+}
+.panel .panel-title {
+  font-size: 32rpx;
+  color: #333333;
+  font-weight: 500;
+}
+
+.input-placeholder {
+  color: #CCCCCC;
+}
+
+.account-info {
+  padding-bottom: 16rpx;
+}
+.account-info .panel-title {
+  margin-bottom: 48rpx;
+}
+
+.certificate {
+  padding-top: 24rpx;
+  padding-bottom: 48rpx;
+}
+.certificate .panel-title {
+  margin-bottom: 16rpx;
+}
+
+.upload-tip {
+  font-size: 24rpx;
+  color: #E73626;
+  line-height: 36rpx;
+  margin-top: 16rpx;
+}
+
+/* 底部 */
+.footer {
+  background: #ffffff;
+  padding-bottom: constant(safe-area-inset-bottom);
+  padding-bottom: env(safe-area-inset-bottom);
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+.footer-inner {
+  padding: 16rpx 32rpx;
+}
+
+.btn-submit {
+  background: #222222;
+  color: #ffffff;
+  font-size: 32rpx;
+  border-radius: 8rpx;
+  height: 96rpx;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

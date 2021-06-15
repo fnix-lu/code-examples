@@ -1,0 +1,7 @@
+<!--pages/order/components/NavBar/NavBar.wxml-->
+<view class="nav-bar" style="{{ navBarStyle }}">
+  <view class="nav-bar-back" bindtap="goBack">
+    <image class="i-back" src="https://static.zc0901.com/dci-seller-mp/nav-back-{{ titleColor }}.png"></image>
+  </view>
+  <view class="nav-bar-title" style="color: {{ titleColor === 'white' ? '#fff' : '#333' }}">服务单详情</view>
+</view>

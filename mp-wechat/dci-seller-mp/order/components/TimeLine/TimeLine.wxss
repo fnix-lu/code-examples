@@ -1,0 +1,73 @@
+/* pages/order/components/TimeLine/TimeLine.wxss */
+.time-line-item {
+  display: flex;
+  background: #fff;
+}
+
+.time-line-side {
+  flex-shrink: 0;
+  width: 48rpx;
+  display: flex;
+  justify-content: center;
+  position: relative;
+  margin-right: 32rpx;
+}
+.time-line-item .time-line-side::before {
+  content: '';
+  position: absolute;
+  left: 50%;
+  top: 0;
+  bottom: 0;
+  border-left: 2rpx solid #CCCCCC;
+  transform: translateX(-50%);
+  z-index: 1;
+}
+.time-line-item:last-child .time-line-side::before {
+  bottom: auto;
+  height: 20rpx;
+}
+.time-line-icon {
+  width: 48rpx;
+  height: 48rpx;
+  background: #cff;
+  position: relative;
+  z-index: 2;
+}
+.time-line-dot {
+  width: 8rpx;
+  height: 8rpx;
+  border-radius: 50%;
+  background: #CCCCCC;
+  border: 4rpx solid #fff;
+  position: relative;
+  top: 16rpx;
+  z-index: 2;
+}
+
+.time-line-info {
+  padding-bottom: 48rpx;
+}
+.time-line-name {
+  font-size: 32rpx;
+  color: #333333;
+  font-weight: 600;
+  line-height: 48rpx;
+}
+.time-line-name-desc {
+  font-size: 28rpx;
+  color: #333333;
+  margin-left: 16rpx;
+  font-weight: initial;
+}
+.time-line-desc {
+  font-size: 28rpx;
+  color: #666666;
+  line-height: 42rpx;
+  margin-top: 8rpx;
+}
+
+.time-line-item.passed .time-line-name,
+.time-line-item.passed .time-line-name-desc,
+.time-line-item.passed .time-line-desc {
+  color: #999999;
+}

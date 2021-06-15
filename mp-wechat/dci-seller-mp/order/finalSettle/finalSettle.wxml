@@ -1,0 +1,75 @@
+<!--pages/order/finalSettle/finalSettle.wxml-->
+<view>
+  <view class="settle-header">
+    <view class="card-panel settle-status">
+      <view class="status-icon">
+        <image class="i-status" src="https://static.zc0901.com/dci-seller-mp/final-settle.png"></image>
+      </view>
+      <view class="status-info">
+        <view class="status-text">完单异常</view>
+        <view class="status-desc">部分项目未完成确认，无法进行完单结算</view>
+      </view>
+    </view>
+  </view>
+
+  <!-- 关于订单 -->
+  <view class="card-panel settle-orders">
+    <view class="title">关于订单确认</view>
+    <view class="settle-item">
+      <text class="name">补货订单未完成签收</text>
+      <image class="status" src="https://static.zc0901.com/dci-seller-mp/settle-status-refresh.png"></image>
+    </view>
+    <view class="settle-item">
+      <text class="name">退货订单已确认完成</text>
+      <image class="status" src="https://static.zc0901.com/dci-seller-mp/settle-status-fail.png"></image>
+    </view>
+    <view class="settle-item">
+      <text class="name">无责补货订单已签收完成</text>
+      <image class="status" src="https://static.zc0901.com/dci-seller-mp/settle-status-done.png"></image>
+    </view>
+    <view class="settle-item">
+      <text class="name">退款订单已确认完成</text>
+      <image class="status" src="https://static.zc0901.com/dci-seller-mp/settle-status-done.png"></image>
+    </view>
+  </view>
+
+  <!-- 关于服务项 -->
+  <view class="card-panel settle-services">
+    <view class="title">关于服务项确认</view>
+    <view class="tip">需承接方点击完成各服务项内容</view>
+    <view class="service-panel">
+      <view class="service-from">
+        <image class="i-service" src="https://static.zc0901.com/dci-seller-mp/settle-user-plus.png"></image>经销商
+      </view>
+      <view class="settle-item">
+        <text class="name">获客</text>
+        <image class="status" src="https://static.zc0901.com/dci-seller-mp/settle-status-done.png"></image>
+      </view>
+      <view class="settle-item">
+        <text class="name">量房、铺贴方案</text>
+        <image class="status" src="https://static.zc0901.com/dci-seller-mp/settle-status-done.png"></image>
+      </view>
+      <view class="settle-item">
+        <text class="name">设计效果图</text>
+        <image class="status" src="https://static.zc0901.com/dci-seller-mp/settle-status-done.png"></image>
+      </view>
+    </view>
+    <view class="service-panel">
+      <view class="service-from">
+        <image class="i-service" src="https://static.zc0901.com/dci-seller-mp/settle-user-plus.png"></image>服务商
+      </view>
+      <view class="settle-item">
+        <text class="name">地方配送、退、补货</text>
+        <image class="status" src="https://static.zc0901.com/dci-seller-mp/settle-status-done.png"></image>
+      </view>
+      <view class="settle-item">
+        <text class="name">加工</text>
+        <image class="status" src="https://static.zc0901.com/dci-seller-mp/settle-status-done.png"></image>
+      </view>
+      <view class="settle-item">
+        <text class="name">工地跟踪及售后</text>
+        <image class="status" src="https://static.zc0901.com/dci-seller-mp/settle-status-done.png"></image>
+      </view>
+    </view>
+  </view>
+</view>

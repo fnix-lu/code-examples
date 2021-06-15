@@ -1,0 +1,83 @@
+<!--pages/order/serviceOrderDetail/serviceOrderDetail.wxml-->
+<view class="page-wrap">
+  <nav-bar background-color="transparent" title-color="white"></nav-bar>
+
+  <view class="order-header">
+    <view class="order-header-info">
+      <view class="order-title">
+        <text class="order-customer-name">乔万尼·薄伽丘</text>
+        <text class="order-status">服务中</text>
+      </view>
+      <view class="order-number">服务单编号：3230908508503233444</view>
+      <view class="order-time">下单时间：2021-05-12 12:00:08</view>
+    </view>
+  </view>
+
+  <!-- 客户信息 -->
+  <view class="order-customer">
+    <view class="order-customer-title">
+      <text class="title">客户信息</text>
+      <view class="btn-exp" bindtap="toggleCustomerInfo">
+        <text>{{ closedCustomerInfo ? '展开' : '收起' }}</text>
+        <image class="i-arrow {{ closedCustomerInfo ? 'closed' : '' }}" src="https://static.zc0901.com/dci-seller-mp/arrow-up-fill.png"></image>
+      </view>
+    </view>
+    <view class="order-customer-info" hidden="{{ closedCustomerInfo }}">
+      <view class="info-row">
+        <text class="info-label">客户姓名</text>
+        <text>乔万尼·薄伽丘</text>
+      </view>
+      <view class="info-row">
+        <text class="info-label">客户电话</text>
+        <text>13776114094</text>
+      </view>
+      <view class="info-row">
+        <text class="info-label">房屋类型</text>
+        <text>两居</text>
+      </view>
+      <view class="info-row">
+        <text class="info-label">房屋面积</text>
+        <text>90㎡</text>
+      </view>
+      <view class="info-row">
+        <text class="info-label">收货人</text>
+        <text>乔万尼·薄伽丘</text>
+      </view>
+      <view class="info-row">
+        <text class="info-label">手机号码</text>
+        <text>13776114094</text>
+      </view>
+      <view class="info-row">
+        <text class="info-label">收货地址</text>
+        <text>江苏省苏州市工业园区旺墩路290号圆融星座写字楼 2901室筑润建材</text>
+      </view>
+    </view>
+  </view>
+
+  <!-- Tabs -->
+  <view class="order-tabs {{ activeTab !== 'service' ? 'border' : '' }}">
+    <view class="tab-item {{ activeTab === 'service' ? 'active' : '' }}" data-tab="service" bindtap="tapTab">服务项目</view>
+    <view class="tab-item {{ activeTab === 'product' ? 'active' : '' }}" data-tab="product" bindtap="tapTab">产品订单</view>
+    <view class="tab-item {{ activeTab === 'payment' ? 'active' : '' }}" data-tab="payment" bindtap="tapTab">支付信息</view>
+  </view>
+
+  <!-- Tabs Contents -->
+  <view>
+    <view hidden="{{ activeTab !== 'service' }}">
+      <tab-service-items></tab-service-items>
+    </view>
+    <view hidden="{{ activeTab !== 'product' }}">
+      <tab-product-orders></tab-product-orders>
+    </view>
+    <view hidden="{{ activeTab !== 'payment' }}">
+      <tab-payment-info></tab-payment-info>
+    </view>
+  </view>
+
+  <!-- 完单结算 -->
+  <view class="footer">
+    <view class="footer-inner">
+      <button class="btn-done" bindtap="goFinalSettle">完单结算</button>
+    </view>
+  </view>
+</view>

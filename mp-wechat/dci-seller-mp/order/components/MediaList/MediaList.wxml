@@ -1,0 +1,18 @@
+<!--pages/order/components/MediaList/MediaList.wxml-->
+<view class="media-list">
+  <!-- 多图 -->
+  <view class="multiple-images" style="margin-top: -{{ boxSpan }}rpx">
+    <view
+      class="img-box"
+      style="{{ imageBoxStyle }}">
+      <image class="img"></image>
+      <view class="cover" wx:if="{{ list.length > 3 }}">+{{ list.length - 3 }}</view>
+    </view>
+
+    <view style="width: {{ boxSize }}rpx"></view>
+  </view>
+
+  <!-- 单图 -->
+
+  <!-- 单视频 -->
+</view>

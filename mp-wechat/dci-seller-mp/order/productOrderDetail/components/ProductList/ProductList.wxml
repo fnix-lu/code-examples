@@ -1,0 +1,40 @@
+<!--pages/order/productOrderDetail/components/ProductList/ProductList.wxml-->
+<view>
+  <view class="product-list">
+    <!-- 产品 -->
+    <view class="product-card">
+      <view class="product-img-wrap">
+        <image class="product-img"></image>
+      </view>
+      <view class="product-info">
+        <view class="product-name">Calacatta · 卡拉卡塔白</view>
+        <view class="info-row row1">
+          <text>30x60cm/哑光/Marble One</text>
+          <text>X12</text>
+        </view>
+        <view class="info-row row2">
+          <text>约33.60m²</text>
+          <text>¥6720</text>
+        </view>
+      </view>
+    </view>
+    <!-- end 产品 -->
+    <view class="product-card">
+      <view class="product-img-wrap">
+        <image class="product-img"></image>
+      </view>
+      <view class="product-info">
+        <view class="product-name">Calacatta · 卡拉卡塔白</view>
+        <view class="info-row row1">
+          <text>30x60cm/哑光/Marble One</text>
+          <text>X12</text>
+        </view>
+        <view class="info-row row2">
+          <text>约33.60m²</text>
+          <text>¥6720</text>
+        </view>
+      </view>
+    </view>
+  </view>
+  <view class="btn-exp" bindtap="showAll" wx:if="{{ list.length > 3 && !isAll }}">展开全部</view>
+</view>

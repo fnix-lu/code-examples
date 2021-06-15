@@ -1,0 +1,8 @@
+{
+  "usingComponents": {
+    "form-item": "./components/FormItem/FormItem",
+    "upload-file": "../components/UploadFile/UploadFile",
+    "mp-modal": "../components/MpModal/MpModal"
+  },
+  "navigationBarTitleText": "支付反馈"
+}

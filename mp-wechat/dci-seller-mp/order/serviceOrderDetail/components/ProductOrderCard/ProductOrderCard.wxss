@@ -1,0 +1,162 @@
+/* pages/order/serviceOrderDetail/components/ProductOrderCard/ProductOrderCard.wxss */
+.product-order-card {
+  background: #F7F8FA;
+  border-radius: 8rpx;
+  padding: 0 32rpx;
+  margin: 0 32rpx;
+}
+
+.card-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 88rpx;
+  position: relative;
+}
+.card-header::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  border-bottom: 2rpx solid #fff;
+}
+
+.card-body {
+  padding: 32rpx 0;
+}
+
+.card-footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 16rpx;
+  padding-bottom: 32rpx;
+  position: relative;
+}
+.card-footer::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  border-top: 2rpx solid #fff;
+}
+
+/* 倒计时 */
+.count-down {
+  display: flex;
+  align-items: center;
+}
+.count-down-label {
+  font-size: 24rpx;
+  color: #666666;
+}
+
+/* 状态 */
+.order-status {
+  font-size: 28rpx;
+}
+.order-status.red {
+  color: #E73626;
+}
+.order-status.gray {
+  color: #999999;
+}
+
+.order-number {
+  font-size: 28rpx;
+  color: #333333;
+  font-weight: 500;
+}
+
+/* 产品 */
+.order-product {
+  margin-top: 32rpx;
+  display: flex;
+  align-items: center;
+}
+.product-img-wrap {
+  position: relative;
+  border-radius: 8rpx;
+  overflow: hidden;
+  flex-shrink: 0;
+}
+.product-img {
+  width: 96rpx;
+  height: 96rpx;
+  background: #cff;
+  display: block;
+}
+.product-img-text {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 32rpx;
+  font-size: 20rpx;
+  color: #fff;
+  background: #222222;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.product-info {
+  flex: 1;
+  font-size: 28rpx;
+  color: #666666;
+  padding-left: 16rpx;
+  line-height: 36rpx;
+}
+.product-info .info-row + .info-row {
+  margin-top: 8rpx;
+}
+
+/* 创建时间 */
+.order-created-time {
+  margin-top: 32rpx;
+  font-size: 24rpx;
+  color: #999999;
+}
+
+/* 更多菜单 */
+.more-menu-trigger {
+  font-size: 28rpx;
+  color: #999999;
+}
+.more-menu-item {
+  font-size: 24rpx;
+  color: #333333;
+  padding: 16rpx 32rpx;
+  position: relative;
+}
+.more-menu-item + .more-menu-item::before {
+  content: '';
+  position: absolute;
+  left: 16rpx;
+  right: 16rpx;
+  top: 0;
+  border-top: 2rpx solid #F8F9FA;
+}
+
+/* 按钮 */
+.order-btns {
+  display: flex;
+}
+.order-btn {
+  height: 64rpx;
+  min-width: 160rpx;
+  padding: 0 16rpx;
+  font-size: 24rpx;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-color: #222222 !important;
+  background: #222222;
+  color: #ffffff;
+  border-radius: 8rpx;
+  margin-left: 16rpx;
+}
+.order-btn[plain] {
+  color: #333333;
+}

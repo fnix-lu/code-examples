@@ -1,0 +1,98 @@
+/* pages/order/serviceOrderDetail/components/ServiceItem/ServiceItem.wxss */
+.service-item {
+  background: #ffffff;
+  position: relative;
+}
+.service-item.border::before {
+  content: '';
+  position: absolute;
+  left: 32rpx;
+  right: 32rpx;
+  top: 0;
+  border-top: 2rpx solid #D8D8D8;
+  transform: scaleY(0.5);
+}
+
+.service-base {
+  display: flex;
+  padding: 32rpx;
+}
+.service-base .base-l {
+  flex: 1;
+  padding-right: 32rpx;
+}
+.service-base .base-r {
+  position: relative;
+  padding-left: 32rpx;
+  display: flex;
+  align-items: center;
+  flex-shrink: 0;
+}
+.service-base .base-r::before {
+  content: '';
+  position: absolute;
+  height: 64rpx;
+  border-left: 2rpx solid #F7F8FA;
+  left: 0;
+}
+
+.service-header {
+  display: flex;
+  align-items: center;
+}
+.service-name {
+  font-size: 28rpx;
+  font-weight: 500;
+  color: #333333;
+}
+.service-from {
+  font-size: 24rpx;
+  color: #666666;
+  margin-left: 32rpx;
+}
+
+.service-status {
+  font-size: 20rpx;
+  width: 96rpx;
+  height: 32rpx;
+  border-radius: 8rpx;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: 16rpx;
+}
+.service-status.todo {
+  background: #FCEAE9;
+  color: #E73626;
+}
+.service-status.doing {
+  background: #FFF6E6;
+  color: #FFAE0D;
+}
+.service-status.done {
+  background: #F4F4F4;
+  color: #999999;
+}
+
+.service-desc {
+  font-size: 24rpx;
+  color: #999999;
+  line-height: 36rpx;
+  margin-top: 8rpx;
+}
+.service-btn {
+  height: 48rpx;
+  width: 144rpx;
+  padding: 0;
+  font-size: 24rpx;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-color: #222222 !important;
+  background: #222222;
+  color: #ffffff;
+  border-radius: 8rpx;
+}
+.service-btn[plain] {
+  color: #333333;
+}

@@ -1,0 +1,35 @@
+<!--pages/order/paymentFeedback/paymentFeedback.wxml-->
+<view>
+  <view class="panel account-info">
+    <view class="panel-title">支付账户信息</view>
+    <form-item required label="账户名称">
+      <input type="text" placeholder="姓名"/>
+    </form-item>
+    <form-item required label="银行名称">
+      <input type="text" placeholder="银行预留手机号"/>
+    </form-item>
+    <form-item required label="支付账户">
+      <input type="text" placeholder="银行账户"/>
+    </form-item>
+  </view>
+
+  <view class="panel certificate">
+    <view class="panel-title">支付凭证</view>
+    <form-item required vertical label="请上传手机转账截图或银行转账凭证照片">
+      <upload-file></upload-file>
+      <view class="upload-tip">·请上传跟本单关联的真实支付凭证图片，图片格式为jpg，图片大小控制在50M以内，最多上传3张图片</view>
+    </form-item>
+  </view>
+
+  <view class="footer">
+    <view class="footer-inner">
+      <button class="btn-submit" bindtap="confirm">确认提交</button>
+    </view>
+  </view>
+
+  <mp-modal
+    model:visible="{{ showModal }}"
+    title="结算成功"
+    content="请确认填写信息无误，提交后将不可修改">
+  </mp-modal>
+</view>

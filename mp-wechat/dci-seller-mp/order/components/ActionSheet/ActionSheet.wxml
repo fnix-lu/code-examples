@@ -1,0 +1,21 @@
+<!--pages/order/components/ActionSheet/ActionSheet.wxml-->
+<view class="mask" bindtap="onHide" wx:if="{{ visible }}"></view>
+<view class="drawer {{ visible ? 'visible' : '' }}">
+  <view class="drawer-inner">
+    <view class="action-group">
+      <view class="action-item action-title" wx:if="{{ title }}">{{ title }}</view>
+      <view
+        class="action-item"
+        wx:for="{{ actions }}"
+        wx:key="*this"
+        data-index="{{ index }}"
+        bindtap="onSelect">
+        <block>{{ item.name }}</block>
+      </view>
+    </view>
+
+    <view class="action-group">
+      <view class="action-item action-cancel" bindtap="onHide">取消</view>
+    </view>
+  </view>
+</view>

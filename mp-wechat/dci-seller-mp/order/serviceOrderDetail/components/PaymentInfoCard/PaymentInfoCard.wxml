@@ -1,0 +1,21 @@
+<!--pages/order/serviceOrderDetail/components/PaymentInfoCard/PaymentInfoCard.wxml-->
+<view class="payment-info-card">
+  <view class="card-header">
+    <text class="payment-time">支付时间：2021-05-14 10:24:20</text>
+  </view>
+  <view class="card-body">
+    <view class="info-row">账户名称：乔万尼·薄伽丘</view>
+    <view class="info-row">银行名称：中国银行</view>
+    <view class="info-row">支付账户：97214974186861523986</view>
+
+    <view class="img-list">
+      <image class="img"></image>
+      <image class="img"></image>
+      <image class="img"></image>
+    </view>
+  </view>
+  <view class="card-footer">
+    <view class="payment-price">支付服务金额：<text class="price">¥42000</text></view>
+    <button class="card-btn">修改支付凭证</button>
+  </view>
+</view>

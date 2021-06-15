@@ -1,0 +1,17 @@
+/* pages/order/serviceOrderDetail/components/TabServiceItems/TabServiceItems.wxss */
+.provider-tel {
+  height: 64rpx;
+  background: #F7F8FA;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 32rpx;
+}
+.provider-tel .tel {
+  font-size: 24rpx;
+  color: #333333;
+}
+.provider-tel .i-tel {
+  width: 48rpx;
+  height: 48rpx;
+}

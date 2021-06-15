@@ -1,0 +1,12 @@
+<!--pages/order/components/TimeLineItem/TimeLineItem.wxml-->
+<view class="time-line-item {{ status }} {{ last ? 'last' : '' }}">
+  <view class="time-line-side">
+    <image class="time-line-icon" src="{{ icon }}" wx:if="{{ icon }}"></image>
+    <view class="time-line-dot" wx:else></view>
+  </view>
+  <view class="time-line-info">
+    <view class="time-line-name">{{ title }}</view>
+    <view class="time-line-desc" wx:if="{{ content }}">{{ content }}</view>
+    <slot></slot>
+  </view>
+</view>

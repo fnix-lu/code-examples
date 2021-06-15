@@ -1,0 +1,9 @@
+/* pages/order/serviceOrderDetail/components/TabPaymentInfo/TabPaymentInfo.wxss */
+.tab-payment-info {
+  background: #fff;
+  padding: 32rpx 0;
+}
+
+.payment-info + .payment-info {
+  margin-top: 32rpx;
+}

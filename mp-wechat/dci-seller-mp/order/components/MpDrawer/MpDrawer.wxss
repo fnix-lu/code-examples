@@ -1,0 +1,57 @@
+/* pages/order/components/MpDrawer/MpDrawer.wxss */
+.mask {
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  background: #000;
+  opacity: 0.7;
+  z-index: 2000;
+}
+
+.drawer {
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: #fff;
+  z-index: 2001;
+  padding-bottom: constant(safe-area-inset-bottom);
+  padding-bottom: env(safe-area-inset-bottom);
+  transform: translateY(100%);
+  visibility: hidden;
+  transition: all 0.2s;
+}
+.drawer.visible {
+  transform: translateY(0);
+  visibility: visible;
+}
+
+/* Drawer */
+.drawer-header {
+  font-size: 32rpx;
+  color: #333333;
+  font-weight: 600;
+  height: 110rpx;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+.drawer-header::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  border-bottom: 2rpx solid #F7F8FA;
+}
+
+.drawer-close {
+  width: 48rpx;
+  height: 48rpx;
+  position: absolute;
+  right: 32rpx;
+  top: 32rpx;
+}

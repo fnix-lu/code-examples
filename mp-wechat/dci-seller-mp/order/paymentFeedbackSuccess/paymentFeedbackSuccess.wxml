@@ -1,0 +1,7 @@
+<!--pages/order/paymentFeedbackSuccess/paymentFeedbackSuccess.wxml-->
+<view class="success-tip">
+  <image class="success-img" src="https://static.zc0901.com/dci-seller-mp/feedback-review.png"></image>
+  <view class="success-text">提交成功，等待审核</view>
+  <view class="success-desc">我们会快马加鞭进行审核，确认后即可安排发货</view>
+  <button class="btn-back" plain>返回服务单</button>
+</view>

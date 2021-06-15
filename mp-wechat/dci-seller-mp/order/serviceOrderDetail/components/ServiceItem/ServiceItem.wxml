@@ -1,0 +1,19 @@
+<!--pages/order/serviceOrderDetail/components/ServiceItem/ServiceItem.wxml-->
+<view class="service-item {{ border ? 'border' : '' }}">
+  <view class="service-base">
+    <view class="base-l">
+      <view class="service-header">
+        <text class="service-name">获客</text>
+        <text class="service-from">经销商</text>
+        <text class="service-status todo">待服务</text>
+        <!-- <text class="service-status doing">服务中</text> -->
+        <!-- <text class="service-status done">服务完成</text> -->
+      </view>
+      <view class="service-desc">负责推荐产品、介绍产品、完成销售下单付款</view>
+    </view>
+    <view class="base-r">
+      <button class="service-btn">开始服务</button>
+      <!-- <button class="service-btn" plain>开始服务</button> -->
+    </view>
+  </view>
+</view>

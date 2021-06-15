@@ -1,0 +1,44 @@
+<!--pages/order/components/TimeLine/TimeLine.wxml-->
+<view class="time-line">
+  <view class="time-line-item active">
+    <view class="time-line-side">
+      <image class="time-line-icon"></image>
+    </view>
+    <view class="time-line-info">
+      <view class="time-line-name">
+        <text>已签收</text>
+        <text class="time-line-name-desc">05-27 09:13</text>
+      </view>
+      <view class="time-line-desc">【苏州市】正在配送至目的地，预计16:00前送达，请保持手机畅通且目的地有人接收</view>
+      <slot></slot>
+    </view>
+  </view>
+
+  <view class="time-line-item passed">
+    <view class="time-line-side">
+      <!-- <image class="time-line-icon"></image> -->
+      <view class="time-line-dot"></view>
+    </view>
+    <view class="time-line-info">
+      <view class="time-line-name">
+        <text>已签收</text>
+        <text class="time-line-name-desc">05-27 09:13</text>
+      </view>
+      <view class="time-line-desc">【苏州市】正在配送至目的地，预计16:00前送达，请保持手机畅通且目的地有人接收</view>
+    </view>
+  </view>
+
+  <view class="time-line-item passed">
+    <view class="time-line-side">
+      <!-- <image class="time-line-icon"></image> -->
+      <view class="time-line-dot"></view>
+    </view>
+    <view class="time-line-info">
+      <view class="time-line-name">
+        <text>已签收</text>
+        <text class="time-line-name-desc">05-27 09:13</text>
+      </view>
+      <view class="time-line-desc">【苏州市】正在配送至目的地，预计16:00前送达，请保持手机畅通且目的地有人接收</view>
+    </view>
+  </view>
+</view>

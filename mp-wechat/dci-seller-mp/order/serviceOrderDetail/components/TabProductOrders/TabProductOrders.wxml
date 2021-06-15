@@ -1,0 +1,12 @@
+<!--pages/order/serviceOrderDetail/components/TabProductOrders/TabProductOrders.wxml-->
+<view class="tab-product-orders">
+  <view class="product-order">
+    <product-order-card></product-order-card>
+  </view>
+  <view class="product-order">
+    <product-order-card></product-order-card>
+  </view>
+  <view class="product-order">
+    <product-order-card></product-order-card>
+  </view>
+</view>

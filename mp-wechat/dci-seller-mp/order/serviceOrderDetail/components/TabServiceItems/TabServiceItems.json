@@ -1,0 +1,7 @@
+{
+  "component": true,
+  "usingComponents": {
+    "service-item": "../ServiceItem/ServiceItem",
+    "action-sheet": "../../../components/ActionSheet/ActionSheet"
+  }
+}

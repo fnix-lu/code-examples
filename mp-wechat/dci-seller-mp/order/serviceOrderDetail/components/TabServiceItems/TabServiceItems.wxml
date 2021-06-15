@@ -1,0 +1,17 @@
+<!--pages/order/serviceOrderDetail/components/TabServiceItems/TabServiceItems.wxml-->
+<view>
+  <view class="provider-tel">
+    <text class="tel">服务商电话：王大陆 1911425092</text>
+    <image class="i-tel" src="https://static.zc0901.com/dci-seller-mp/phone.png" bindtap="showCallSheet"></image>
+  </view>
+  <!-- 服务项 -->
+  <service-item></service-item>
+  <service-item border></service-item>
+  <service-item border></service-item>
+
+  <action-sheet
+    model:visible="{{ visibleCallSheet }}"
+    title="1911425092"
+    actions="{{ [{ name: '呼叫' }, { name: '复制' }] }}">
+  </action-sheet>
+</view>

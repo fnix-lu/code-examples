@@ -1,0 +1,9 @@
+{
+  "usingComponents": {
+    "product-list": "./components/ProductList/ProductList",
+    "mp-drawer": "../components/MpDrawer/MpDrawer",
+    "time-line": "../components/TimeLine/TimeLine",
+    "count-down": "../components/CountDown/CountDown",
+    "mp-popover": "../components/MpPopover/MpPopover"
+  }
+}

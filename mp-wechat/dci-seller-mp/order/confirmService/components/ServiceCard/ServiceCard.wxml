@@ -1,0 +1,11 @@
+<!--pages/order/confirmService/components/ServiceCard/ServiceCard.wxml-->
+<view class="service-card">
+  <view class="service-card-header">
+    <text class="service-card-title">{{ title }}</text>
+    <view class="service-detail-desc" wx:if="{{ showDesc }}">
+      <text>详细说明</text>
+      <image class="i-desc" src="https://static.zc0901.com/dci-seller-mp/question.png"></image>
+    </view>
+  </view>
+  <slot></slot>
+</view>

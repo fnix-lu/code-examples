@@ -1,0 +1,40 @@
+<!--pages/order/serviceOrderDetail/components/ProductOrderCard/ProductOrderCard.wxml-->
+<view class="product-order-card">
+  <view class="card-header">
+    <view class="count-down">
+      <text class="count-down-label">剩余支付时间：</text>
+      <count-down seconds="{{ 3600 }}" background></count-down>
+    </view>
+    <view class="order-status red">待付款</view>
+    <!-- <view class="order-status gray">已取消</view> -->
+  </view>
+  <view class="card-body">
+    <view class="order-number">订单编号：20210526298470</view>
+    <view class="order-product">
+      <view class="product-img-wrap">
+        <image class="product-img"></image>
+        <text class="product-img-text">共16款</text>
+      </view>
+      <view class="product-info">
+        <view class="info-row">产品金额：¥6720</view>
+        <view class="info-row">数量：12片/约33.60m² </view>
+      </view>
+    </view>
+    <view class="order-created-time">创建时间：2021-05-14 10:52</view>
+  </view>
+  <view class="card-footer">
+    <mp-popover>
+      <view slot="trigger" class="more-menu-trigger">更多</view>
+      <view class="more-menu-list">
+        <view class="more-menu-item">修改订单</view>
+        <view class="more-menu-item">取消订单</view>
+      </view>
+    </mp-popover>
+    <view class="order-btns">
+      <button class="order-btn" plain>分享订单</button>
+      <!-- <button class="order-btn">上传订单支付凭证</button> -->
+      <!-- <button class="order-btn">查看物流</button> -->
+      <button class="order-btn">重新提交</button>
+    </view>
+  </view>
+</view>

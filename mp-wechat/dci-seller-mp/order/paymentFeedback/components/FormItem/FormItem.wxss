@@ -1,0 +1,39 @@
+/* pages/order/paymentFeedback/components/FormItem/FormItem.wxss */
+.form-item-main {
+  display: flex;
+}
+.form-item-main .form-item-label {
+  font-size: 28rpx;
+  color: #666666;
+  line-height: 80rpx;
+  flex-shrink: 0;
+  margin-right: 32rpx;
+}
+.form-item-main .form-item-label .i-required {
+  margin-right: 8rpx;
+  color: #E73626;
+}
+.form-item-main .form-item-slot {
+  min-height: 80rpx;
+  display: flex;
+  align-items: center;
+  flex: 1;
+}
+
+.form-item-main .form-item-slot input {
+  width: 100%;
+  font-size: 28rpx;
+  color: #333333;
+}
+
+.form-item.is-vertical .form-item-main {
+  display: block;
+}
+.form-item.is-vertical .form-item-main .form-item-label {
+  margin-right: 0;
+  margin-bottom: 16rpx;
+}
+.form-item.is-vertical .form-item-main .form-item-slot {
+  min-height: initial;
+  display: block;
+}

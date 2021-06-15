@@ -1,0 +1,12 @@
+<!--pages/order/paymentFeedback/components/FormItem/FormItem.wxml-->
+<view class="form-item {{ vertical ? 'is-vertical' : '' }}">
+  <view class="form-item-main">
+    <view class="form-item-label">
+      <text class="i-required" wx:if="{{ required }}">*</text>
+      <text>{{ label }}</text>
+    </view>
+    <view class="form-item-slot">
+      <slot></slot>
+    </view>
+  </view>
+</view>

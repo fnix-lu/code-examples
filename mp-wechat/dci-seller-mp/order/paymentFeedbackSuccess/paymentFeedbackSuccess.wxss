@@ -1,0 +1,43 @@
+/* pages/order/paymentFeedbackSuccess/paymentFeedbackSuccess.wxss */
+.success-tip {
+  margin-top: 144rpx;
+  text-align: center;
+}
+.success-img {
+  width: 360rpx;
+  height: 212rpx;
+  display: block;
+  margin: auto;
+}
+.success-text {
+  font-size: 36rpx;
+  color: #333333;
+  font-weight: 600;
+  line-height: 44rpx;
+  margin-top: 48rpx;
+}
+.success-desc {
+  width: 428rpx;
+  margin: auto;
+  font-size: 28rpx;
+  color: #999999;
+  line-height: 42rpx;
+  margin-top: 16rpx;
+}
+
+/* .btn-back {
+  color: #333333;
+} */
+
+.btn-back[plain] {
+  width: 240rpx;
+  height: 80rpx;
+  font-size: 28rpx;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-color: #222222;
+  color: #333333;
+  border-radius: 8rpx;
+  margin-top: 64rpx;
+}

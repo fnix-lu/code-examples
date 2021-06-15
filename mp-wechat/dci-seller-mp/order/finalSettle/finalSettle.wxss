@@ -1,0 +1,126 @@
+/* pages/order/finalSettle/finalSettle.wxss */
+page {
+  background: #F7F8FA;
+}
+
+.settle-header {
+  height: 484rpx;
+  background: #333;
+  position: relative;
+}
+
+.card-panel {
+  width: 686rpx;
+  margin: auto;
+  background: #FFFFFF;
+  border-radius: 8rpx;
+  padding: 32rpx;
+  box-sizing: border-box;
+}
+
+/* 整体状态 */
+.settle-status {
+  position: absolute;
+  left: 32rpx;
+  bottom: 100rpx;
+  display: flex;
+  align-items: center;
+  padding-top: 48rpx;
+  padding-bottom: 48rpx;
+}
+.settle-status .status-icon {
+  width: 96rpx;
+  height: 96rpx;
+  border-radius: 50%;
+  background: #F3F6F8;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-shrink: 0;
+  margin-right: 32rpx;
+}
+.settle-status .status-icon .i-status {
+  width: 64rpx;
+  height: 64rpx;
+}
+.settle-status .status-text {
+  font-size: 32rpx;
+  color: #333333;
+  font-weight: 600;
+  line-height: 40rpx;
+}
+.settle-status .status-desc {
+  font-size: 24rpx;
+  color: #999999;
+  line-height: 32rpx;
+  margin-top: 8rpx;
+}
+
+/* 关于订单 */
+.settle-orders {
+  margin-top: -68rpx;
+  position: relative;
+  z-index: 10;
+  margin-bottom: 32rpx;
+}
+.settle-orders .title {
+  font-size: 32rpx;
+  color: #333333;
+  font-weight: 600;
+  margin-bottom: 38rpx;
+}
+
+.settle-item {
+  font-size: 28rpx;
+  color: #333333;
+  line-height: 36rpx;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.settle-item + .settle-item {
+  margin-top: 28rpx;
+}
+.settle-item .status {
+  width: 48rpx;
+  height: 48rpx;
+}
+
+/* 关于服务项 */
+.settle-services {
+  margin-bottom: 32rpx;
+}
+.settle-services .title {
+  font-size: 32rpx;
+  color: #333333;
+  font-weight: 600;
+  margin-bottom: 8rpx;
+}
+.settle-services .tip {
+  font-size: 24rpx;
+  color: #E73626;
+  line-height: 32rpx;
+  margin-bottom: 32rpx;
+}
+
+.service-panel + .service-panel {
+  margin-top: 38rpx;
+}
+.service-panel .service-from {
+  font-size: 28rpx;
+  color: #333333;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  margin-bottom: 22rpx;
+}
+.service-panel .service-from .i-service {
+  width: 48rpx;
+  height: 48rpx;
+  margin-right: 8rpx;
+}
+
+.service-panel .settle-item {
+  padding-left: 56rpx;
+  color: #999999;
+}

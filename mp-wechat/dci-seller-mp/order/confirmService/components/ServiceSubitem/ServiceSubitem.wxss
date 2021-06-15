@@ -1,0 +1,47 @@
+/* pages/order/confirmService/components/ServiceSubitem/ServiceSubitem.wxss */
+.service-subitem {
+  padding: 32rpx 0;
+  position: relative;
+}
+.service-subitem::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  border-top: 2rpx solid #F7F8FA;
+}
+.service-base {
+  display: flex;
+  align-items: center;
+}
+.service-base-info {
+  flex: 1;
+}
+.service-base-title {
+  font-size: 28rpx;
+  color: #333333;
+  font-weight: 600;
+  line-height: 36rpx;
+}
+.service-base-desc {
+  margin-top: 8rpx;
+  font-size: 24rpx;
+  color: #999999;
+  line-height: 36rpx;
+}
+
+.btn-confirm {
+  width: 128rpx;
+  height: 48rpx;
+  color: #fff;
+  background: #222222;
+  border-radius: 8rpx;
+  font-size: 24rpx;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+  flex-shrink: 0;
+  margin-left: 32rpx;
+}

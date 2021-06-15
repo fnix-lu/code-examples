@@ -1,0 +1,11 @@
+<!--pages/order/confirmService/components/ServiceSubitem/ServiceSubitem.wxml-->
+<view class="service-subitem">
+  <view class="service-base">
+    <view class="service-base-info">
+      <view class="service-base-title">{{ title }}</view>
+      <view class="service-base-desc">{{ desc }}</view>
+    </view>
+    <button class="btn-confirm" wx:if="{{ showButton }}">确认</button>
+  </view>
+  <slot></slot>
+</view>
