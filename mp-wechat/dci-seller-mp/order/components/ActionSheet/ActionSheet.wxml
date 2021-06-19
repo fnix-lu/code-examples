@@ -7,7 +7,7 @@
       <view
         class="action-item"
         wx:for="{{ actions }}"
-        wx:key="*this"
+        wx:key="name"
         data-index="{{ index }}"
         bindtap="onSelect">
         <block>{{ item.name }}</block>

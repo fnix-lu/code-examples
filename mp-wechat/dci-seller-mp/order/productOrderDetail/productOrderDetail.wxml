@@ -47,7 +47,7 @@
       </view>
       <view class="info-row">
         <view class="info-label">预计送达时间<text class="info-desc">（已实际反馈时间为准）</text></view>
-        <view class="info-value">2021-05-23 </view>
+        <view class="info-value">2021-05-23</view>
       </view>
       <view class="info-row">
         <view class="info-label">商品总价</view>

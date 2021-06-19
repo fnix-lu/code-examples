@@ -6,7 +6,7 @@
       <input type="text" placeholder="姓名"/>
     </form-item>
     <form-item required label="银行名称">
-      <input type="text" placeholder="银行预留手机号"/>
+      <input type="text" placeholder="银行名称"/>
     </form-item>
     <form-item required label="支付账户">
       <input type="text" placeholder="银行账户"/>
