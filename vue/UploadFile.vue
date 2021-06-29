@@ -12,6 +12,13 @@
           <i class="el-icon-zoom-in"></i>
           <i class="el-icon-delete" @click="removeFile(i)"></i>
         </div>
+
+        <el-progress
+          class="media-item-progress"
+          :percentage="Math.floor(file.percentage)"
+          :show-text="false"
+          v-if="file.status === 'uploading'"
+        />
       </div>
 
       <!-- 上传 -->
@@ -21,6 +28,7 @@
         :file-list="fileList"
         :limit="limit"
         :before-upload="beforeUpload"
+        :on-progress="onProgress"
         :on-success="onSuccess"
         v-show="!limit || fileList.length < limit">
         <div class="upload-trigger">
@@ -73,6 +81,11 @@ export default {
       })
     },
 
+    // 上传过程
+    onProgress(res, file, list) {
+      this.$emit('update:fileList', list)
+    },
+
     // 上传成功
     onSuccess(res, file, list) {
       this.$emit('update:fileList', list)
@@ -121,6 +134,19 @@ export default {
   }
   .media-item:hover & {
     display: flex;
+  }
+}
+
+.media-item-progress {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  ::v-deep {
+    .el-progress-bar__outer,
+    .el-progress-bar__inner {
+      border-radius: 0;
+    }
   }
 }
 
