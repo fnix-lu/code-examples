@@ -1,0 +1,41 @@
+<!-- 使用伪类和边框 -->
+<div class="tag"></div>
+
+<style>
+  .tag {
+    width: 100px;
+    height: 30px;
+    background: #ccf;
+    position: relative;
+    margin: auto;
+  }
+  .tag::before {
+    content: '';
+    border-left: 30px solid transparent;
+    border-bottom: 30px solid #ccf;
+    position: absolute;
+    left: -30px;
+  }
+  .tag::after {
+    content: '';
+    border-right: 30px solid transparent;
+    border-top: 30px solid #ccf;
+    position: absolute;
+    right: -30px;
+  }
+</style>
+
+<!-- 使用变换 带圆角 -->
+<div class="tag2"></div>
+
+<style>
+  .tag2 {
+    width: 100px;
+    height: 30px;
+    border-radius: 12px;
+    background: #cfc;
+    position: relative;
+    margin: 10px auto;
+    transform: skewX(-45deg);
+  }
+</style>
